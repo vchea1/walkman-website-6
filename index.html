@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sony Walkman - The Ultimate Portable Music Experience</title>
+
+  <!-- Internal CSS for styling the website -->
+  <style>
+    /* General page styling */
+    body {
+      font-family: Arial, sans-serif; /* Default font */
+      background-color: #f4f4f4; /* Light gray background color */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styling for the header */
+    header {
+      background-color: #0a1f44; /* Dark blue background */
+      color: white; /* White text */
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 150px; /* Size the logo */
+    }
+
+    /* Global navigation bar styling */
+    nav {
+      background-color: #333; /* Dark gray background */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white; /* White text */
+      margin: 0 15px;
+      text-decoration: none; /* Remove underline */
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f4f4f4; /* Lighter color when hovered */
+    }
+
+    /* Main content styling */
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    /* Styling for individual sections */
+    .section {
+      width: 45%; /* Each section takes up 45% of the width */
+    }
+
+    .section img {
+      width: 100%; /* Make the image take full width of its container */
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #0a1f44;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Form styling */
+    form {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #0a1f44;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <img src="https://cdn.freebiesupply.com/logos/large/2x/sony-2-logo-png-transparent.png" alt="Sony Logo">
+    <h1>Sony Walkman - The Ultimate Portable Music Experience</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#promotion">Promotion</a>
+    <a href="#about">About</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#support">Support</a>
+    <a href="#corporate">Corporate Info</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <!-- Promotion Section -->
+    <div id="promotion" class="section">
+      <h2>Why the Sony Walkman is a Great Deal</h2>
+      <p>The Sony Walkman is the revolutionary device that lets you take your music with you wherever you go. Whether you're commuting, exercising, or relaxing at home, the Walkman delivers high-quality sound in a portable, easy-to-carry design. Why settle for large, bulky radios when you can have personal, on-the-go music with just the press of a button?</p>
+    </div>
+
+    <!-- Product Image Section -->
+    <div class="section">
+      <img src="https://thisdayintechhistory.com/wp-content/uploads/2012/07/walkman_sony_tps_l2_phonografic1-792x1024.jpeg" alt="Sony Walkman">
+    </div>
+  </div>
+
+  <!-- About the Product Section -->
+  <div id="about" class="section">
+    <h2>What Makes the Sony Walkman So Great?</h2>
+    <p>The Sony Walkman offers crystal-clear sound, compact size, and convenience all in one. With a high-quality tape deck, the Walkman lets you enjoy your favorite music on cassette tapes. Designed for portability, it features a lightweight build and easy-to-use controls that make it perfect for any lifestyle. It's an essential tool for anyone who wants to experience music on their own terms.</p>
+  </div>
+
+  <!-- Feedback Section -->
+  <div id="feedback" class="section">
+    <h2>Customer Feedback</h2>
+    <p>Have you used the Sony Walkman? Share your experience with us!</p>
+    
+    <!-- Feedback form with simple fields -->
+    <form id="feedbackForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="comment">Your Feedback:</label>
+      <textarea id="comment" name="comment" rows="5" required></textarea>
+
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </div>
+
+  <!-- Support Section -->
+  <div id="support" class="section">
+    <h2>Need Support?</h2>
+    <p>If you need help with your Sony Walkman, our customer support team is here to assist you. Please call our toll-free hotline at 1-800-SONY for troubleshooting, maintenance advice, or warranty information.</p>
+  </div>
+
+  <!-- Corporate Information Section -->
+  <div id="corporate" class="section">
+    <h2>About Sony</h2>
+    <p>Sony is a global leader in electronics, gaming, and entertainment. Founded in 1946, Sony has consistently produced groundbreaking products, like the Walkman, that change the way people experience technology and entertainment.</p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 1980 Sony Corporation. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript to handle form submission -->
+  <script>
+    // Basic form validation and feedback submission
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevents page reload on form submission
+      
+      // Get the user input
+      let name = document.getElementById('name').value;
+      let comment = document.getElementById('comment').value;
+
+      // Display an alert with the feedback information
+      alert('Thank you, ' + name + '!\nYour feedback: ' + comment);
+      
+      // Reset the form after submission
+      document.getElementById('feedbackForm').reset();
+    });
+  </script>
+</body>
+</html>
